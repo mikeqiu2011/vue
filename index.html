@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world Vue</title>
+    <script
+        src="//cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js">
+      </script>
+</head>
+<body>
+    <div id="hello-world-app">
+        <h1>{{ msg }}</h1>
+    </div>    
+</body>
+
+<script>
+    new Vue({
+      el: "#hello-world-app",
+      data() {
+        return {
+          msg: "Hello World!"
+        }
+      }
+    });
+  </script>
+</html>
